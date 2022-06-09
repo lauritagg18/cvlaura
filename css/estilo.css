@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;500;600&display=swap');
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	font-family: 'Barlow', sans-serif;
+	font-size: 1.2rem;
+	min-height: 100%; 
+	background-color: #9ADCFF
+	 
+}
+.grid_container{
+	display: grid;
+	gap: 5px;
+	grid-template: 
+	"header" 30px
+	"experiencia" auto
+	"portfolio" auto
+	"footer" 70px
+	;
+}
+
+.header{
+	grid-area: header;
+	background-color: #9ADCFF;
+	margin: 5px;
+}
+ 
+.experiencia{
+	grid-area: experiencia;
+	background-color: #FFF89A;
+	margin: 5px
+}
+
+.portfolio{
+	grid-area: portfolio;
+	background-color: #FFF89A;
+	margin: 5px;
+	text-align: center
+}
+
+.footer{
+	grid-area: footer;
+	background-color: #FFB2A6;
+	text-align: center;
+}
+
+.sizeima {width: 99%;border-color: #FFB2A6;border-style:solid;border-width: 5px}
+section  {display: flex; flex-flow: wrap;margin: 1%}
+div{width: 50%;}
+.exp {display: flex;flex-flow: wrap}
+.cir{width: 50%;}
+.redes{width: 15%;}
+.redes img{width: 50%}
+h1{color:#FF8AAE;text-align: center;}
+.rosa{background-color:#FF8AAE}
+.lrosa{color:#FF8AAE}
+h2{text-align:center;}
+.logoup{width: 1.7%;padding-top: 0.3%;}
+svg{flex-flow: wrap;width: 10%;}
+h3,a,p,b,li{font-size: 70%;}
+h2{font-size: 88%;}
+.gal{width: 100%;}
+.gale{width: 32%;}
+.portfolio img{border-radius:20%}
+.tam {margin-left: 30%}
+.portfolio img{ transition: 1s}
+.portfolio img:hover{filter: grayscale(100%);transform: scale(1.1);}
+@media (min-width:50px) {
+	.grid_container{
+		grid-template: 
+		"header      header             header " 	    auto 
+		"experiencia experiencia        experiencia" 	auto
+		"portfolio   portfolio          portfolio"      auto
+		"footer     footer              footer"         auto /
+		 200px 		500px               auto;
+ 	}
+	
+@media (min-width: 768px) {
+	.grid_container{
+		grid-template: 
+		"header        experiencia      experiencia"    auto 
+		"portfolio     portfolio        portfolio" 	    auto
+		"footer 	   footer 	        footer" 	    auto /
+		 300px 		   auto            auto;
+	}
+ h1{font-size:170% }
+@media (min-width: 900px) {
+	.grid_container{
+		grid-template: 
+		"header 	experiencia    portfolio      portfolio " 	    auto 
+		"header     experiencia    portfolio      portfolio " 	    auto
+		"header     experiencia    portfolio      portfolio " 	    auto
+		"footer 	footer         footer	      footer" 	        auto /
+		 200px   	330px          500px           auto;
+	}
+	h1{font-size: 100%}
+}
+
+@media (min-width: 1200px) {
+	.grid_container{
+		grid-template: 
+		"header 	experiencia    portfolio      portfolio " 	    auto 
+		"header     experiencia    portfolio      portfolio " 	    auto
+		"header     experiencia    portfolio      portfolio " 	    auto
+		"footer 	footer         footer	      footer" 	        auto /
+		 300px   	500px          500px           auto;
+	}
+h1{font-size: 180%}
+}
